@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -11,7 +12,9 @@ class PostController extends Controller
 {
     public function index(): View
     {
-        return view('post.index');
+        return view('post.index', [
+            'post' => Post::with('user')->latest()->get(),
+        ]);
     }
     public function store(Request $request): RedirectResponse{
         $validated = $request->validate([
