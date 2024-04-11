@@ -16,7 +16,7 @@ class PostController extends Controller
     public function store(Request $request): RedirectResponse{
         $validated = $request->validate([
 
-        'message' => 'required|string|max:255',
+        'content' => 'required|string|max:255',//mettre content à message
 
     ]);
 
