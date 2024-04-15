@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+    // création d’une clef étrangère
         Schema::table('posts', function (Blueprint $table) {
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
 });
