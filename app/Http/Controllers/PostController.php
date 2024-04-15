@@ -1,8 +1,5 @@
-<!-- controleur http qui va prendre récupérer les requête et les retourner en réponse -->
-<?php
-
-namespace App\Http\Controllers;
-
+<?php namespace App\Http\Controllers;
+//controleur http qui va prendre récupérer les requête et les retourner en réponse 
 use Illuminate\Support\Facades\Gate;
 use App\Models\Post;
 use Illuminate\Http\RedirectResponse;

@@ -1,8 +1,5 @@
-<!-- Le modèle de fichier utilisé par Eloquent -->
-
-<?php
-
-namespace App\Models;
+<?php namespace App\Models;
+//Le modèle de fichier utilisé par Eloquent 
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
