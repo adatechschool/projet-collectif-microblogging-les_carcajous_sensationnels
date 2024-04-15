@@ -29,8 +29,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+//la route post.update accepte la data edepuis le formulaire et met à jour le modèle
 Route::resource('post', PostController::class)
-    ->only(['index', 'store'])
+     ->only(['index', 'store', 'edit', 'update'])
     ->middleware(['auth', 'verified']);
 
 require __DIR__.'/auth.php';

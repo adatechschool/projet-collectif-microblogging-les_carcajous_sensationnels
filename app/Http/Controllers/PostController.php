@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Gate;
 use App\Models\Post;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -30,4 +31,46 @@ class PostController extends Controller
 
 
     return redirect(route('post.index'));} 
+
+     /**
+
+     * Show the form for editing the specified resource.
+
+     */
+     public function edit(Post $post): View {
+         Gate::authorize('update', $post);
+
+ 
+
+        return view('post.edit', [
+
+            'post' => $post,
+
+        ]);
+     }
+
+       /**
+
+     * Update the specified resource in storage.
+
+     */
+       public function update(Request $request, Post $post): RedirectResponse {
+            Gate::authorize('update', $post);
+
+ 
+
+        $validated = $request->validate([
+
+            'message' => 'required|string|max:255',
+
+        ]);
+
+ 
+
+        $post->update($validated);
+
+ 
+
+        return redirect(route('post.index'));
+       }
 }
