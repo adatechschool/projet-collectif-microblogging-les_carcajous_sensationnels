@@ -11,7 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-          Schema::table('posts', function (Blueprint $table) {
+        // supprimer la colonne 'title'  
+        Schema::table('posts', function (Blueprint $table) {
             $table->dropColumn('title');
         });
     }

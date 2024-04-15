@@ -15,6 +15,7 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    {{-- rajouter un bouton post à la navbar, composant donné par breeze --}}
                     <x-nav-link :href="route('post.index')" :active="request()->routeIs('post.index')">
 
                         {{ __('Post') }}
@@ -75,6 +76,7 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            {{-- rajouter un bouton post à la navbar, composant donné par breeze pour écran mobile --}}
             <x-responsive-nav-link :href="route('post.index')" :active="request()->routeIs('post.index')">
 
                 {{ __('Post') }}

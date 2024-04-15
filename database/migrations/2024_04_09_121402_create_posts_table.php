@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+    // création des tables dans la base de données
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
