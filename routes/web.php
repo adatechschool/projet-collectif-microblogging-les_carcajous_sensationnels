@@ -34,7 +34,7 @@ Route::middleware('auth')->group(function () {
 //la route post.update accepte la data edepuis le formulaire et met à jour le modèle
 Route::resource('post', PostController::class)
 
-     ->only(['index', 'store', 'edit', 'update'])
+     ->only(['index', 'store', 'edit', 'update', 'destroy'])
     // s’assure que seul l’user connecté peut poster en vérifiant l’email
     ->middleware(['auth', 'verified']);
 
