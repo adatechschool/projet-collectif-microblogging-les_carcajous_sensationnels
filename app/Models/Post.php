@@ -1,6 +1,7 @@
 <?php namespace App\Models;
 //Le modèle de fichier utilisé par Eloquent 
 
+use App\Events\PostCreated;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -11,6 +12,11 @@ class Post extends Model
     use HasFactory;
 // permet de poster du contenu uniquement si l’utilisateurice est connecté·e
     protected $fillable = ['content'];
+    protected $dispatchesEvents = [
+        'created' => PostCreated::class,
+    ];
+ 
+
 
     public function user(): BelongsTo
 
