@@ -38,4 +38,8 @@ Route::resource('post', PostController::class)
     // s’assure que seul l’user connecté peut poster en vérifiant l’email
     ->middleware(['auth', 'verified']);
 
+//upload photo de profil
+Route::get('profile', [ProfileController::class,'profile'])->middleware('auth')->name('profile');
+
+
 require __DIR__.'/auth.php';
