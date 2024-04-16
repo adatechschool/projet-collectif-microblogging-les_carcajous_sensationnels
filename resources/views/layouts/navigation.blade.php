@@ -19,8 +19,8 @@
                     <x-nav-link :href="route('post.index')" :active="request()->routeIs('post.index')">
 
                         {{ __('Post') }}
-                
                     </x-nav-link>
+                    
                 </div>
             </div>
 

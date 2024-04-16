@@ -3,6 +3,7 @@
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,7 +40,9 @@ Route::resource('post', PostController::class)
     ->middleware(['auth', 'verified']);
 
 //upload photo de profil
-Route::get('profile', [ProfileController::class,'profile'])->middleware('auth')->name('profile');
+
+//route edition de profil
+Route::resource('users', UserController::class)->only('show','edit','update')->middleware('auth');
 
 
 require __DIR__.'/auth.php';
