@@ -39,7 +39,6 @@ Route::resource('post', PostController::class)
     ->middleware(['auth', 'verified']);
 
 //upload photo de profil
-Route::get('profile', [ProfileController::class,'profile'])->middleware('auth')->name('profile');
 
 
 require __DIR__.'/auth.php';
