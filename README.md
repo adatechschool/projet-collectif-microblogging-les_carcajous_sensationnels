@@ -5,9 +5,14 @@
 [![made-with](https://img.shields.io/badge/Made_with-Laravel-f6352d.svg)](https://laravel.com)
 [![made-with](https://img.shields.io/badge/Made_with-PostgreSQL-6497c1.svg)](https://www.postgresql.org/)
 
-
 Ce projet à pour but de réaliser une plateforme de micro-blogging. Il a été réalisé en 7 jours par une équipe de 3 personnes en contexte agile (daily, mob programming).
 
+<img src="https://github.com/adatechschool/projet-collectif-microblogging-les_carcajous_sensationnels/blob/main/pictures/post.png?raw=true" width=90% height=90%>
+<img src="https://github.com/adatechschool/projet-collectif-microblogging-les_carcajous_sensationnels/blob/main/pictures/edit-delete.png?raw=true" width=90% height=90%>
+<p float="left">
+    <img src="https://github.com/adatechschool/projet-collectif-microblogging-les_carcajous_sensationnels/blob/main/pictures/signup.png?raw=true" width=45% height=45% />
+    <img src="https://github.com/adatechschool/projet-collectif-microblogging-les_carcajous_sensationnels/blob/main/pictures/login.png?raw=true" width=45% height=45% />
+</p>
 
 # Installation
 
@@ -96,3 +101,10 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+# Axes d’amélioration
+- Pouvoir poster des images
+- Affichage du profil d’utilisateurice avec photo de profil
+- Pouvoir éditer son profil
+- Ajouter la fonction hastag
+- Intégrer les tests
