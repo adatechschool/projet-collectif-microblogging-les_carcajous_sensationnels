@@ -8,7 +8,7 @@
 
 Ce projet à pour but de réaliser une plateforme de micro-blogging. Il a été réalisé en 7 jours par une équipe de 3 personnes en contexte agile (daily, mob programming).
 
-/capture/
+![post]([https://github.com/adatechschool/projet-collectif-plateforme-de-meubles-leschaisesmusicales/assets/146881805/f3be1276-f440-4e1d-b19d-810fbb21e26a)
 
 # Installation
 
